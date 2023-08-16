@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>College Admission Form</title>
+    <style>
+      .icon img {
+        width: 20%;
+        float: left;
+      }
+      /* body {
+        background-color: azure;
+      } */
+      .main {
+        height: 300px;
+        background-color: azure;
+      }
+
+      .main .heading {
+        float: left;
+        margin: 120px;
+        font-size: larger;
+        font-family: cursive;
+      }
+      .main .info {
+        float: right;
+        margin: 100px 0px;
+      }
+      .frm {
+        background-color: lightblue;
+        border: 5px solid #000000;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        padding: 10px;
+      }
+      .frm form h1 {
+        color: blue;
+        font-style: italic;
+      }
+      .emergency {
+        border: 3px solid red;
+        margin: 10px;
+        padding: 20px;
+      }
+      .frm input #btn {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="icon">
+        <img src="cap.jpg" />
+      </div>
+      <div class="heading">
+        <h1>ACME CITY<span> COLLEGE</span></h1>
+      </div>
+      <div class="info">
+        <h4>ACME CITY COLLEGE</h4>
+        <p>
+          123 Maple Street,Houston ,TX, 77002<br />
+          <a href="">example@example.com</a><br />
+          <a href="">www.example.com</a><br />
+          <a href="">(123)1234567</a>
+        </p>
+      </div>
+    </div>
+    <div class="frm">
+      <form method="">
+        <h1>COLLEGE ADMISSION FORM</h1>
+        <p>Enter your admission below</p>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="First Name" />
+        <input type="text" placeholder="Middle Initial" id="name" name="name" />
+        <input
+          type="text"
+          placeholder="Last Name"
+          id="name"
+          name="name"
+        /><br /><br />
+        <label for="birthdate">Birth Date</label>
+        <input
+          type="date"
+          name="birthdate"
+          id="birthdate"
+          placeholder="dd-mm-yyyy"
+          value=""
+          min="1997-01-01"
+          max="2030-12-31"
+        /><br /><br />
+        <label for="">Gender</label>
+        <input name="gender" type="radio" /><label for="">Male</label>
+        <input name="gender" type="radio" /><label for="">female</label>
+        <br /><br />
+        <label for="country">Of which country are you a citizen?</label
+        ><br /><br />
+        <select>
+          <option value="1">Please Select</option>
+          <option value="2">Lahore</option>
+          <option value="3">Islamabad</option>
+          <option value="4">Peshawar</option>
+          <option value="5">Quetta</option>
+          <option value="6">Karachi</option>
+        </select>
+        <br /><br />
+        <label for="contact">Phone</label>
+        <input
+          name="contact"
+          id="contact"
+          placeholder="(000) 000-000"
+          type="number"
+        /><br /><br />
+        <label for="mail">Email Address</label>
+        <input
+          type="email"
+          placeholder="myname@example.com"
+          name="mail"
+          id="mail"
+        /><br /><br />
+        <label for="mailAdd">Mailing Address</label>
+        <input
+          name="mailAdd"
+          id="mailAdd"
+          placeholder="Street Address"
+          type="text"
+        />
+        <input
+          name="mailAdd"
+          id="mailAdd"
+          placeholder="Street Address Line 2"
+          type="text"
+        /><br /><br />
+        <input name="mailAdd" id="mailAdd" placeholder="City" type="text" />
+        <input
+          name="mailAdd"
+          id="mailAdd"
+          placeholder="State/Province"
+          type="text"
+        />
+        <input
+          name="mailAdd"
+          id="mailAdd"
+          placeholder="Postal/Zip code"
+          type="text"
+        />
+        <br /><br />
+        <div class="emergency">
+          <label for="name">Emergency Contact</label>
+          <input name="name" id="name" type="text" placeholder="First Name" />
+          <input name="name" id="name" type="text" placeholder="Last Name" />
+          <br /><br />
+          <label for="rel">Relationship</label>
+          <input name="rel" id="rel" type="text" />
+          <br /><br />
+          <label for="maill">Email</label>
+          <input
+            name="maill"
+            id="maill"
+            placeholder="example@example.com"
+            type="email"
+          /><br /><br />
+          <label for="contact">Phone</label>
+          <input
+            name="contact"
+            id="contact"
+            placeholder="(000) 000-000"
+            type="number"
+          /><br /><br />
+        </div>
+        <label>Do you Speak Any languages other than English?</label>
+        <input type="radio" /><label>Yes</label> <input type="radio" /><label
+          >No</label
+        ><br /><br />
+        <input id="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

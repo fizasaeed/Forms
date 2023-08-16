@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Form</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+      .myform {
+        background-color: lightblue;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        padding: 10px;
+        border: solid rebeccapurple 3px;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Form</h1>
+    <div class="myform">
+      <form method="">
+        <label for="name">Name:</label
+        ><input
+          id="name"
+          name="name"
+          placeholder="Type your name"
+          type="text"
+        /><br />
+        <br />
+        <label for="email">Email:</label
+        ><input
+          id="email"
+          name="email"
+          placeholder="Type your email"
+          type="text"
+        /><br />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          name="password"
+          id="password"
+          placeholder="Type your password"
+          type="password"
+        />
+        <br /><br />
+        <label for="Admission">Date of admission:</label>
+        <input name="date" id="Admission" type="date" />
+        <br /><br />
+        <label for="">Gender</label>
+        <input name="gender" type="radio" /><label for="">Male</label>
+        <input name="gender" type="radio" checked /><label for="">female</label>
+        <br /><br />
+        <label>Select your city</label>
+        <select>
+          <option value="1">Karachi</option>
+          <option value="2">Lahore</option>
+          <option value="3">Islamabad</option>
+          <option value="4">Peshawar</option>
+          <option value="5">Quetta</option>
+        </select>
+        <br /><br />
+        <label>Select your desired courses</label>
+        <input type="checkbox" />Python <input type="checkbox" />OOP
+        <input type="checkbox" />DSA <input type="checkbox" />DBMS <br /><br />
+        <label>Enter your Comments here</label>
+        <br />
+        <textarea name="comments" cols="40" rows="8"></textarea>
+        <br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
+  </body>
+</html>

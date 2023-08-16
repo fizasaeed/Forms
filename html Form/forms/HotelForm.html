@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      h1 {
+        color: red;
+        text-align: center;
+      }
+      .form table {
+        background-color: lightblue;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Continental Hotel Reservation Form</h1>
+    <div class="form">
+      <form action="fix.php" method="">
+        <table cellpadding="5" cellspacing="2" border="3">
+          <tr>
+            <th>Name</th>
+            <td><input type="text" placeholder="Your name" /></td>
+          </tr>
+          <tr>
+            <th>email</th>
+            <td><input type="email" placeholder="info@continental.pk" /></td>
+          </tr>
+          <tr>
+            <th>Mobile no</th>
+            <td><input type="tel" placeholder="Enter your cell phone" /></td>
+          </tr>
+          <tr>
+            <th>Arrival time</th>
+            <td><input type="time" placeholder="Enter your arrival time" /></td>
+          </tr>
+          <tr>
+            <th>Departure</th>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <th rowspan="2">Room Type</th>
+            <td>
+              <input type="radio" name="roomtype" value="single" />Single<input
+                type="radio"
+                value="double"
+                name="roomtype"
+              />Double
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="roomtype"
+                value="presidential suite"
+              />Presidential
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="3">Preferences</th>
+            <td><input type="checkbox" value="Non Smoking" />Non Smoking</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" value="Internet" />Internet</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" value="Firm Mattress" />Firm Mattress
+            </td>
+          </tr>
+          <tr>
+            <th rowspan="2">Mode of Payment</th>
+            <td>
+              <input type="checkbox" value="Cash" />Cash<input
+                type="checkbox"
+                value="Check"
+              />Check
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" value="Credit card" />Credit card
+              <button type="button">Select card</button>
+            </td>
+          </tr>
+          <tr style="text-align: center">
+            <td>
+              <button type="button">Send Data</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
